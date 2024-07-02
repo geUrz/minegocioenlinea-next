@@ -1,0 +1,186 @@
+.containerMenu{
+  padding: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: var(--bg4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000; 
+  
+}
+
+.logo{
+  width: 100%;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.logo a{
+  cursor: pointer;
+}
+
+.logo img{
+  height: 45px;
+  cursor: pointer;
+}
+
+.iconBar{
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.iconBar svg, .iconBar svg path{
+  color: azure;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.containerMenuSide{
+  width: 100%;
+  max-width: 230px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bg4);
+  transition: all .25s;
+  z-index: 1000;
+}
+
+.topMenuSide{
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.topMenuSide svg, .topMenuSide path{
+  color: azure;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.topMenuSide h1{
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.topMenuSide h2{
+  padding: 2px 5px;
+  margin-top: 0px;
+  color: var(--bg1);
+  font-size: 8.5px;
+  background-color: azure;
+  cursor: pointer;
+}
+
+.topMenuSide:hover{
+  background-color: var(--bg3);
+}
+
+.topMenuSide:active{
+  background-color: var(--bg2);
+}
+
+.listaMenuSide div{
+  padding: 12px;
+  width: 100%;
+  height: auto;
+  color: azure;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.listaMenuSide svg, .listaMenuSide path{
+  margin-right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.listaMenuSide div:hover{
+  background-color: var(--bg3);
+}
+
+.listaMenuSide div:active{
+  background-color: var(--bg2);
+}
+
+.menu, .iconUser{
+  display: none;
+}
+
+
+@media screen and (min-width: 1100px){
+
+  .logo img{
+    height: 55px;
+  }
+
+  .iconBar{
+    display: none;
+  }
+
+  .iconUser{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconUser svg, .iconUser path{
+    font-size: 22.5px;
+    cursor: pointer;
+  }
+
+  .iconUser h1{
+    margin-left: 5px;
+    font-size: 18px;
+  }
+
+  .menu{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+  }
+  
+  .menu a{
+    padding: 0px 15px;
+    font-size: small;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .menu svg, .menu path{
+    margin-bottom: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .menu a:hover, .menu a:hover svg, .menu a:hover path{
+    color: var(--bg0);
+  }
+
+}
+

@@ -1,0 +1,129 @@
+.containerAccount{
+  padding: 50px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+}
+
+.cuenta{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuenta h1{
+  font-size: 26px;
+  color: gray;
+}
+
+.boxInfo{
+  margin-top: 40px;
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.boxInfo div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxInfo svg, .boxInfo path{
+  color: var(--bg4);
+  font-size: 50px;
+}
+
+.boxInfo h1{
+  margin-top: 5px;
+  color: var(--bg1);
+  font-size: 20px;
+}
+
+.boxInfo h2{
+  color: var(--bg1);
+  font-size: 14px;
+}
+
+.boxSettings{
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tuNegocio{
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tuNegocio h1{
+  font-size: 26px;
+  color: gray;
+}
+
+.tuNegocio h2{
+  font-size: 12px;
+  color: gray;
+}
+
+.boxSignOut{
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxSignOut svg, .boxSignOut path{
+  color: azure;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.boxSignOut h1{
+  margin-right: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.containerBusiness{
+  padding: 100px 0 50px 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .boxSettings{
+    max-width: 380px;
+    flex-direction: row;
+  }
+
+}

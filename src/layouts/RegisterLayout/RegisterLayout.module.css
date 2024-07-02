@@ -1,0 +1,39 @@
+.relative{
+  padding-top: 80px;
+} 
+
+.topBar{
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+  background-color: var(--bg4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100; 
+  
+}
+
+.logo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo svg, .logo path{
+  font-size: 38px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+
+  .relative{
+    padding-top: 80px;
+  } 
+
+}
+
+

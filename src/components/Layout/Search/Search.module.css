@@ -1,0 +1,36 @@
+.section{
+  padding: 0 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  padding-left: 10px;
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: azure;
+}
+
+.inputSearch{
+  width: 100%;
+}
+
+.container svg, .container path{
+  font-size: 20px;
+  color: var(--bg6);
+}
+
+@media screen and (min-width:680px) {
+
+  .container{
+    max-width: 450px;
+  }
+
+} 

@@ -1,0 +1,39 @@
+.iconWhats{
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.iconWhats a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.iconWhats svg, .iconWhats path{
+  padding: 4.5px;
+  font-size: 48px;
+  border-radius: 50%;
+  background-color: darkgoldenrod;
+  cursor: pointer;
+}
+
+.iconWhats svg:hover{
+  background-color: rgb(204, 150, 14);
+}
+
+.iconWhats svg:active{
+  background-color: rgb(223, 164, 15);
+}
+
+
+@media screen and (min-width: 780px){
+
+  .iconWhats{
+    right: 40px;
+  }
+
+}

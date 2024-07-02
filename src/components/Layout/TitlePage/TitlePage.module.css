@@ -1,0 +1,35 @@
+.titlePage{
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlePage h1{
+  color: gray;
+  font-size: 25px;
+  font-weight: 200 !important;
+  font-family: 'Bebas' !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .titlePage{
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .titlePage{
+    margin-top: 80px;
+  }
+
+  .titlePage h1{
+    font-size: 30px;
+  }
+
+}

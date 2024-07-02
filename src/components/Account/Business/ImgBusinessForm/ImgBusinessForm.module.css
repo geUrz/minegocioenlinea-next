@@ -1,0 +1,20 @@
+.iconClose{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.iconClose svg, .iconClose path{
+  font-size: 25px;
+  color: var(--bg5);
+  cursor: pointer;
+}
+
+.formLabel{
+  font-weight: 600 !important;
+  color: gray !important;
+  background-color: azure !important;
+}
