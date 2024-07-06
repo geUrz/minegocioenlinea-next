@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { useAuth } from '@/hooks'
 import { Image } from 'semantic-ui-react'
-import { FaBars, FaCloudUploadAlt, FaHeart, FaHome, FaList, FaShoppingCart, FaTimes, FaUser, FaUserCircle } from 'react-icons/fa'
+import { FaBars, FaCloudUploadAlt, FaHome, FaList, FaTimes, FaUser, FaUserCircle } from 'react-icons/fa'
 import styles from './TopBar.module.css'
 import { Search } from '../Search'
 
@@ -26,23 +26,7 @@ export function TopBar() {
       <div className={styles.containerMenu}>
 
         <div className={styles.logo} onClick={() => router.push('/')}>
-          <Link href='/'>
-            <Image src='/img/logo.webp' />
-          </Link>
-        </div>
-
-        <div className={styles.iconUser}>
-          <FaUser
-            onClick={user ? (
-              () => router.push('/account')
-            ) : (
-              () => router.push('/join/signin')
-            )}/>
-          {!user ? (
-            ''
-          ) : (
-            <h1>{user.username}</h1>
-          )}
+          <Image src='/img/logo.webp' />
         </div>
 
         <Search />
@@ -60,6 +44,19 @@ export function TopBar() {
           <Link href='/about'>
              ¿ Qué es <br></br>Mi Negocio en Línea ?
           </Link>
+          <div className={styles.iconUser}>
+          <FaUser
+            onClick={user ? (
+              () => router.push('/account')
+            ) : (
+              () => router.push('/join/signin')
+            )}/>
+          {!user ? (
+            ''
+          ) : (
+            <h1>{user.username}</h1>
+          )}
+        </div>
         </div>
 
         <div className={styles.iconBar}>

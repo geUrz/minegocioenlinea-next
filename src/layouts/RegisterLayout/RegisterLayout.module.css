@@ -23,16 +23,16 @@
   justify-content: center;
 }
 
-.logo svg, .logo path{
-  font-size: 38px;
+.logo img{
+  height: 40px;
   cursor: pointer;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
 
-  .relative{
-    padding-top: 80px;
-  } 
+  .logo img{
+    height: 50px;
+  }
 
 }
 

@@ -3,6 +3,7 @@ import { Footer } from '@/components/Layout'
 import styles from './RegisterLayout.module.css'
 import { FaShoppingCart } from 'react-icons/fa'
 import Link from 'next/link'
+import { Image } from 'semantic-ui-react'
 
 export function RegisterLayout(props) {
 
@@ -14,7 +15,7 @@ export function RegisterLayout(props) {
       <div className={styles.topBar}>
         <div className={styles.logo}>
           <Link href='/'>
-            <FaShoppingCart />
+            <Image src='/img/logo.webp' />
           </Link>
         </div>
       </div>

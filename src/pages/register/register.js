@@ -15,24 +15,23 @@ export default function Register() {
   const [reload, setReload] = useState(false)
   const onReload = () => setReload((prevState) => !prevState)
   const [business, setBusiness] = useState()
-  
+
   useEffect(() => {
 
     if (!user) {
       router.push('join/signup')
-      console.log('1')
     }
 
-    else if (user.username === business.attributes.user.data.attributes.username) {
-      router.push('/account')
+    if (user) {
+      if (!business) {
+        router.push('/register')
+      }
+      else if (user.username === business.attributes.user.data.attributes.username) {
+        router.push('/account')
+      }
     }
 
-    else if (user && !business) {
-      router.push('/register')
-      console.log('2')
-    }
-
-}, [])
+  }, [business, user])
 
   useEffect(() => {
     (async () => {
@@ -44,7 +43,6 @@ export default function Register() {
       }
     })()
   }, [])
-  
 
   return (
 

@@ -20,7 +20,7 @@
 }
 
 .container img{
-  height: 40px;
+  height: 45px;
 }
 
 .container a{
@@ -64,35 +64,16 @@
 
 .copy h4{
   font-size: 8.5px;
-  font-weight: 200;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1024px){
 
   .containerFooter > div{
     height: 400px;
   }
 
-  .boxVisited h1{
-    font-size: 22.5px;
-  }
-
-  .containerUbicacion img{
-    margin-bottom: 20px;
-    height: 120px;
-  }
-
-  .containerUbicacion h4{
-    font-size: 14px;
-  }
-
-  .titleSiguenos h4{
-    font-size: 14px;
-  }
-
-  .boxSiguenos svg, .boxSiguenos path{
-    margin: 0 8px;
-    font-size: 30px;
+  .container img{
+    height: 55px;
   }
 
   .copy h4{
