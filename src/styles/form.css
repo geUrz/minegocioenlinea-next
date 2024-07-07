@@ -6,9 +6,9 @@
 }
 
 .ui.form input, .ui.form textarea{
+  padding-left: 10px !important;
   width: 300px !important;
   font-size: small !important;
-  /* text-transform: capitalize !important; */
   color: azure !important;
   background-color: var(--bg1) !important;
 }

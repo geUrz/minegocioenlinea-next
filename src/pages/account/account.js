@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { BasicLayout } from '@/layouts'
-import { ChangeNameForm, ChangePassword, Info } from '@/components/Account'
+import { ChangeEmail, ChangeNameForm, ChangePassword, Info } from '@/components/Account'
 import { useAuth } from '@/hooks'
 import { useRouter } from 'next/router'
 import { FaSignOutAlt, FaUser } from 'react-icons/fa'
@@ -50,9 +50,10 @@ export default function Account() {
         <div className={styles.boxSettings}>
 
           <ChangeNameForm reload={reload} onReload={onReload} />
-
+          
           <ChangePassword reload={reload} onReload={onReload} />
 
+          <ChangeEmail reload={reload} onReload={onReload} />
         </div>
 
       </div>

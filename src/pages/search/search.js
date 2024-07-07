@@ -47,7 +47,7 @@ export default function Search(props) {
               <FaSearch />
               <BiSolidXCircle />
             </div>
-            <h1>No hay resultados</h1>
+            <h1>No hay resultados para</h1>
           </div>
         )}
 

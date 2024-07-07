@@ -25,13 +25,16 @@ export function ChangePassword() {
         </div>
         <Form>
           <Label className={styles.formLabel}>
-            Contraseña
+            Nueva contraseña*
           </Label>
           <FormInput
-            placeholder='Nueva contraseña'
+
           />
+          <Label className={styles.formLabel}>
+            Confirmar nueva contraseña*
+          </Label>
           <FormInput
-            placeholder='Confirmar nueva contraseña'
+        
           />
           <FormButton primary size="small">
             Guardar

@@ -10,7 +10,7 @@ import { FaUserPlus  } from 'react-icons/fa'
 export default function Signup() {
   return (
     
-    <JoinLayout>
+    <JoinLayout relative>
       
       <div className={styles.containerSignin}>
         <div className={styles.boxSignin}>

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { Form, FormButton, FormGroup, FormInput } from "semantic-ui-react";
+import { Form, FormButton, FormGroup, FormInput, Label } from "semantic-ui-react";
 import { useFormik } from "formik"
 import { initialValues, validationSchema } from "./LoginForm.form"
 import { useAuth } from "@/hooks"
@@ -33,18 +33,22 @@ export function LoginForm() {
   return (
   
   <Form onSubmit={formik.handleSubmit}>
+    <Label>
+      Nombre de usuario*
+    </Label>
     <FormInput 
       name='identifier'
       type='text' 
-      placeholder='Usuario'
       value={formik.values.identifier}
       onChange={formik.handleChange}
       error={formik.errors.identifier}
     />
+    <Label>
+        Contraseña*
+      </Label>
     <FormInput 
       name='password'
       type='password' 
-      placeholder='Contraseña' 
       value={formik.values.password}
       onChange={formik.handleChange}
       error={formik.errors.password}
