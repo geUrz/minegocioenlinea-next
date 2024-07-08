@@ -1,6 +1,7 @@
 .containerSignin{
+  padding-top: 60px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,4 +50,13 @@
   font-size: 14px;
   color: azure;
   cursor: pointer;
+}
+
+@media screen and (min-width:1024px){
+
+  .containerSignin{
+    padding: 150px 0;
+  }
+  
+
 }

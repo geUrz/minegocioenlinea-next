@@ -44,15 +44,16 @@ export function TopBar() {
           <Link href='/about'>
              ¿ Qué es <br></br>Mi Negocio en Línea ?
           </Link>
-          <div className={styles.iconUser}>
-          <FaUser
+          <div className={styles.iconUser}
             onClick={user ? (
               () => router.push('/account')
             ) : (
               () => router.push('/join/signin')
-            )}/>
+            )}
+          >
+          <FaUser />
           {!user ? (
-            ''
+            <h1>Iniciar sesión</h1>
           ) : (
             <h1>{user.username}</h1>
           )}

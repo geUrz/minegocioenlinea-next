@@ -117,13 +117,3 @@
   justify-content: center;
   background-color: azure;
 }
-
-
-@media screen and (min-width: 600px) {
-
-  .boxSettings{
-    max-width: 380px;
-    flex-direction: row;
-  }
-
-}

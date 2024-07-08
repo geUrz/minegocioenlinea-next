@@ -65,6 +65,7 @@ export function RegisterBusinessForm(props) {
             <FormInput
               name='slug'
               type="text"
+              placeholder='Nombre de tu negocio'
               value={formik.values.slug}
               onChange={formik.handleChange}
               error={formik.errors.slug}
@@ -73,11 +74,12 @@ export function RegisterBusinessForm(props) {
           </FormField>
           <FormField>
             <Label className={styles.formLabel}>
-              Descripción
+              Descripción (opcional)
             </Label>
             <FormTextArea
               name='description'
               type="text"
+              placeholder='Describe lo que ofrece tu negocio'
               value={formik.values.description}
               onChange={formik.handleChange}
               error={formik.errors.description}
@@ -105,9 +107,10 @@ export function RegisterBusinessForm(props) {
               onChange={formik.handleChange}
               error={formik.errors.categorieone}
             >
-              <option value=''>- Seleccionar categoría -</option>
+              <option value=''>-- Seleccionar categoría --</option>
               <option value='Alimentos'>Alimentos</option>
               <option value='Belleza'>Belleza</option>
+              <option value='Bienesraices'>Bienes Raíces</option>
               <option value='EscuelasyCursos'>Escuelas y Cursos</option>
               <option value='GruposyMusica'>Grupos y Música</option>
               <option value='Mascotas'>Mascotas</option>
@@ -116,11 +119,12 @@ export function RegisterBusinessForm(props) {
               <option value='Salud'>Salud</option>
               <option value='ServiciosProfesionales'>Servicios Profesionales</option>
               <option value='ServiciosTecnicos'>Servicios Técnicos</option>
+              <option value='Tecnologia'>Tecnología</option>
             </FormField>
           </FormField>
           <FormField>
             <Label className={styles.formLabel}>
-              Categoría 2
+              Categoría 2 (opcional)
             </Label>
             <FormField
               name='categorietwo'
@@ -130,9 +134,10 @@ export function RegisterBusinessForm(props) {
               onChange={formik.handleChange}
               error={formik.errors.categorietwo}
             >
-              <option value=''>- Seleccionar categoría -</option>
+              <option value=''>-- Seleccionar categoría --</option>
               <option value='Alimentos'>Alimentos</option>
               <option value='Belleza'>Belleza</option>
+              <option value='Bienesraices'>Bienes Raíces</option>
               <option value='EscuelasyCursos'>Escuelas y Cursos</option>
               <option value='GruposyMusica'>Grupos y Música</option>
               <option value='Mascotas'>Mascotas</option>
@@ -141,6 +146,7 @@ export function RegisterBusinessForm(props) {
               <option value='Salud'>Salud</option>
               <option value='ServiciosProfesionales'>Servicios Profesionales</option>
               <option value='ServiciosTecnicos'>Servicios Técnicos</option>
+              <option value='Tecnologia'>Tecnología</option>
             </FormField>
           </FormField>
           <FormField>
@@ -169,22 +175,24 @@ export function RegisterBusinessForm(props) {
           <FormField>
             <FormField>
               <Label className={styles.formLabel}>
-                Teléfono
+                Teléfono (opcional)
               </Label>
               <FormInput
                 name='telefono'
                 type="number"
+                placeholder='10 dígitos'
                 value={formik.values.telefono}
                 onChange={formik.handleChange}
                 error={formik.errors.telefono}
               />
             </FormField>
             <Label className={styles.formLabel}>
-              Whatsapp
+              Whatsapp (opcional)
             </Label>
             <FormInput
               name='whatsapp'
               type="number"
+              placeholder='10 dígitos'
               value={formik.values.whatsapp}
               onChange={formik.handleChange}
               error={formik.errors.whatsapp}
@@ -192,11 +200,12 @@ export function RegisterBusinessForm(props) {
           </FormField>
           <FormField>
             <Label className={styles.formLabel}>
-              Facebook
+              Facebook (opcional)
             </Label>
             <FormInput
               name='facebook'
               type="text"
+              placeholder='facebook.com/miperfil'
               value={formik.values.facebook}
               onChange={formik.handleChange}
               error={formik.errors.facebook}
@@ -204,11 +213,12 @@ export function RegisterBusinessForm(props) {
           </FormField>
           <FormField>
             <Label className={styles.formLabel}>
-              Sitio web
+              Sitio web (opcional)
             </Label>
             <FormInput
               name='website'
               type="text"
+              placeholder='www.minegocio.com'
               value={formik.values.website}
               onChange={formik.handleChange}
               error={formik.errors.website}
@@ -216,12 +226,13 @@ export function RegisterBusinessForm(props) {
           </FormField>
           <FormField>
             <Label className={styles.formLabel}>
-              Ubicación
+              Ubicación (opcional)
             </Label>
             
             <FormInput
               name='locate'
               type="text"
+              placeholder='Fracc. Nuevo, Calle Nueva, # 2098'
               value={formik.values.locate}
               onChange={formik.handleChange}
               error={formik.errors.locate}
