@@ -69,7 +69,7 @@ export default function Business(props) {
               <FaFacebook className={styles.iconFacebook} />
 
               {businessSlug.facebook ? (
-                <Link href={`https://${businessSlug.facebook}`} target='blank'>
+                <Link href={`https://www.facebook.com/${businessSlug.facebook}`} target='blank'>
                   {businessSlug.slug}
                 </Link>
               ) : (

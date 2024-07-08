@@ -151,7 +151,7 @@ export function RegisterBusinessForm(props) {
           </FormField>
           <FormField>
             <Label className={styles.formLabel}>
-              Palabras clave*
+              Palabras clave (opcional)
             </Label>
             <FormTextArea
               name='tags'
@@ -205,7 +205,7 @@ export function RegisterBusinessForm(props) {
             <FormInput
               name='facebook'
               type="text"
-              placeholder='facebook.com/miperfil'
+              placeholder='miperfil'
               value={formik.values.facebook}
               onChange={formik.handleChange}
               error={formik.errors.facebook}
