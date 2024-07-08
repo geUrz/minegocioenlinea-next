@@ -22,10 +22,6 @@ export function Footer(props) {
               <FaWhatsapp />
               <h2>6861349399</h2>
             </Link>
-            <div>
-              <FaRegEnvelope />
-              <h2>gerardourzua@jlcomputer-services.com</h2>
-            </div>
           </div>
 
           <div className={styles.copy}>
