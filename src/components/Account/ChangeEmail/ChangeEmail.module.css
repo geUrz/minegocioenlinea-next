@@ -9,9 +9,3 @@
   color: var(--bg5);
   cursor: pointer;
 }
-
-.formLabel{
-  font-weight: 600 !important;
-  color: gray !important;
-  background-color: azure !important;
-}

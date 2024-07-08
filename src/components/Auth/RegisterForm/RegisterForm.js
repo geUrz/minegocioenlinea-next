@@ -3,6 +3,7 @@ import { useFormik } from "formik"
 import { useRouter } from "next/router"
 import { Auth } from "@/api"
 import { initialValues, validationSchema } from "./RegisterForm.form"
+import styles from './RegisterForm.module.css'
 
 
 const authCtrl = new Auth()
@@ -28,7 +29,7 @@ export function RegisterForm() {
   return (
 
     <Form onSubmit={formik.handleSubmit}>
-      <Label>
+      <Label className={styles.label}>
         Nombre de usuario*
       </Label>
       <FormInput 
@@ -38,7 +39,7 @@ export function RegisterForm() {
         onChange={formik.handleChange}
         error={formik.errors.username}
       />
-      <Label>
+      <Label className={styles.label}>
         Correo*
       </Label>
       <FormInput 
@@ -46,9 +47,9 @@ export function RegisterForm() {
         type='email' 
         value={formik.values.email}
         onChange={formik.handleChange}
-        error={formik.errors.email} 
+        error={formik.errors.email}
       />
-      <Label>
+      <Label className={styles.label}>
         Contraseña*
       </Label>
       <FormInput 
@@ -58,7 +59,7 @@ export function RegisterForm() {
         onChange={formik.handleChange}
         error={formik.errors.password}
       />
-      <Label>
+      <Label className={styles.label}>
         Confirmar contraseña*
       </Label>
       <FormInput 

@@ -1,4 +1,4 @@
-import { RegisterLayout } from '@/layouts'
+import { BasicLayout } from '@/layouts'
 import { useEffect, useState } from 'react'
 import { RegisterBusinessForm } from '@/components/Business'
 import { useAuth } from '@/hooks'
@@ -46,7 +46,7 @@ export default function Register() {
 
   return (
 
-    <RegisterLayout relative>
+    <BasicLayout relative>
 
       <div className={styles.section}>
         <div className={styles.container}>
@@ -56,7 +56,7 @@ export default function Register() {
         </div>
       </div>
 
-    </RegisterLayout>
+    </BasicLayout>
 
   )
 }

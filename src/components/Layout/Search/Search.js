@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Input } from 'semantic-ui-react'
+import { FormInput, Input } from 'semantic-ui-react'
 import { FaSearch } from 'react-icons/fa'
 import { useRouter } from 'next/router'
 import styles from './Search.module.css'
@@ -27,7 +27,7 @@ export function Search() {
 
         <FaSearch />
 
-        <Input
+        <FormInput
           id='inputSearch'
           placeholder='Buscar un negocio'
           className={styles.inputSearch}

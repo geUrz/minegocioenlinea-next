@@ -7,7 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--bg4); */
 }
 
 .iconClose{
@@ -48,8 +47,6 @@
 }
 
 .formLabel{
-  font-weight: 600 !important;
-  color: gray !important;
-  background-color: azure !important;
+  padding-left: 2px !important;
 }
 

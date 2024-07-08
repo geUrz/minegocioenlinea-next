@@ -10,31 +10,30 @@ import { FaTimes } from "react-icons/fa"
 
 const userCtrl = new User()
 
-export function ChangeNameForm(props) {
+export function ChangeNameForm() {
 
-  const { reload, onReload } = props
-
-  const { user } = useAuth()
+  const { user, updateUser } = useAuth()
 
   const [show, setShow] = useState(false)
 
   const onOpenClose = () => setShow((prevState) => !prevState)
 
   const formik = useFormik({
-    initialValues: initialValues(user.username),
+    initialValues: initialValues(),
     validationSchema: validationSchema(),
     validateOnChange: false,
     onSubmit: async (formValue) => {
       try {
         await userCtrl.updateMe(user.id, formValue)
+        updateUser('username', formValue.username)
+        formik.handleReset()
         onOpenClose()
-        onReload()
       } catch (error) {
         console.error(error)
       }
 
     }
-  }, [reload])
+  })
 
   return (
 
@@ -49,15 +48,25 @@ export function ChangeNameForm(props) {
           <FaTimes />
         </div>
         <Form onSubmit={formik.handleSubmit}>
-          <Label className={styles.formLabel}>
-            Nombre de usuario
+          <Label>
+            Nuevo nombre de usuario*
           </Label>
           <FormInput
             name='username'
-            placeholder='Nuevo nombre de usuario'
+            type='text'
             value={formik.values.username}
             onChange={formik.handleChange}
             error={formik.errors.username}
+          />
+          <Label>
+            Confirmar nuevo nombre de usuario*
+          </Label>
+          <FormInput
+            name='confirmUsername'
+            type='text'
+            value={formik.values.confirmUsername}
+            onChange={formik.handleChange}
+            error={formik.errors.confirmUsername}
           />
           <FormField>
             <FormButton

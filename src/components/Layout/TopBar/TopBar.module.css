@@ -46,7 +46,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--bg4);
+  background-color: rgba(0, 150, 170, .9);
   transition: all .25s;
   z-index: 1000;
 }

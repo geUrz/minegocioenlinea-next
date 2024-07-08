@@ -230,7 +230,7 @@ export function RegisterBusinessForm(props) {
         </FormGroup>
 
         <FormButton
-          color='grey'
+          primary
           type='submit'
           loading={formik.isSubmitting}
         >

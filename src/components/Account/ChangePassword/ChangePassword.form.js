@@ -1,13 +1,15 @@
 import * as Yup from 'yup'
 
-export function initialValues(email){
+export function initialValues(){
   return {
-    email,
+    password: '',
+    confirmPassword: ''
   }
 }
 
 export function validationSchema(){
   return Yup.object({
-    email: Yup.string().email().required(true)
+    password: Yup.string().required(true),
+    confirmPassword: Yup.string().required(true).oneOf([Yup.ref('password')], true)
     })
 }

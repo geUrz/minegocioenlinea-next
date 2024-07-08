@@ -5,6 +5,7 @@ import { initialValues, validationSchema } from "./LoginForm.form"
 import { useAuth } from "@/hooks"
 import { Auth } from "@/api"
 import { Toaster, toast } from "sonner"
+import styles from './LoginForm.module.css'
 
 const authCtrl = new Auth()
 
@@ -33,7 +34,7 @@ export function LoginForm() {
   return (
   
   <Form onSubmit={formik.handleSubmit}>
-    <Label>
+    <Label className={styles.label}>
       Nombre de usuario*
     </Label>
     <FormInput 
@@ -43,9 +44,9 @@ export function LoginForm() {
       onChange={formik.handleChange}
       error={formik.errors.identifier}
     />
-    <Label>
-        Contraseña*
-      </Label>
+    <Label className={styles.label}>
+      Contraseña*
+    </Label>
     <FormInput 
       name='password'
       type='password' 

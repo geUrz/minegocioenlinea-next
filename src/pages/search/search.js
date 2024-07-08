@@ -28,7 +28,7 @@ export default function Search(props) {
         {hasResult ? (
           <>
 
-            <ArrowBack title='Resultados' />
+            <ArrowBack />
 
             <div className={styles.container}>
               {map(business, (busines) => (

@@ -49,11 +49,11 @@ export default function Account() {
 
         <div className={styles.boxSettings}>
 
-          <ChangeNameForm reload={reload} onReload={onReload} />
+          <ChangeNameForm />
           
-          <ChangePassword reload={reload} onReload={onReload} />
+          <ChangePassword />
 
-          <ChangeEmail reload={reload} onReload={onReload} />
+          <ChangeEmail />
         </div>
 
       </div>
