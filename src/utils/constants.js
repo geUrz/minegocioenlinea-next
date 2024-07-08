@@ -1,8 +1,6 @@
 export const ENV = {
-  /* SERVER_HOST: 'https://minegocioenlinea-strapi.onrender.com',
-  API_URL: 'https://minegocioenlinea-strapi.onrender.com/api', */
-  SERVER_HOST: 'http://localhost:1337',
-  API_URL: 'http://localhost:1337/api', 
+  SERVER_HOST: 'https://minegocioenlinea-strapi.onrender.com',
+  API_URL: 'https://minegocioenlinea-strapi.onrender.com/api', 
   ENDPOINTS: {
     AUTH: {
       REGISTER: 'auth/local/register',
