@@ -4,8 +4,6 @@ import { useFormik } from 'formik'
 import { Form, FormButton, FormField, FormGroup, FormInput, Label } from 'semantic-ui-react'
 import { FaEdit, FaTimes } from 'react-icons/fa'
 import { Toaster, toast } from 'sonner'
-import { useRouter } from 'next/router'
-import { useAuth } from '@/hooks'
 import { initialValues, validationSchema } from './ImgBusinessForm.form'
 import styles from './ImgBusinessForm.module.css'
 
@@ -14,8 +12,6 @@ const businessCtrl = new Business()
 export function ImgBusinessForm(props) {
 
   const { business, businessId, reload, onReload, onOpenCloseEdit } = props
-  const { user } = useAuth()
-  const router = useRouter()
   const [file, setFile] = useState()
 
   const formik = useFormik({
@@ -28,7 +24,7 @@ export function ImgBusinessForm(props) {
         if (!file) return
         const formData = new FormData();
         formData.append('files', file);
-        const res = await fetch('http://localhost:1337/api/upload', { method: 'POST', body: formData })
+        const res = await fetch('https://minegocioenlinea-strapi.onrender.com/api/upload', { method: 'POST', body: formData })
         const imageData = await res.json();
         const imageId = imageData?.[0]?.id;
 

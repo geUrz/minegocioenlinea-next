@@ -61,7 +61,7 @@ export default function Business(props) {
                   {businessSlug.whatsapp}
                 </Link>
               ) : (
-                <h1 className={styles.noDisponible}>No disponible</h1>
+                <h2 className={styles.noDisponible}>No disponible</h2>
               )}
 
             </div>

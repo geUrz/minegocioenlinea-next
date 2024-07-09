@@ -3,12 +3,9 @@ import styles from './Business.module.css'
 import { Confirm, NoImage } from '@/components/Layout'
 import { Toaster } from 'sonner'
 import { BasicModal } from '@/layouts/BasicModal'
-import { Business as BusinessApi } from '@/api'
 import { useState } from 'react'
 import { ImgBusinessForm } from '../ImgBusinessForm'
-import { FaTrash } from 'react-icons/fa'
 
-const delBusiness = new BusinessApi()
 
 export function Business(props) {
 
@@ -21,17 +18,6 @@ export function Business(props) {
   const [showConfirm, setShowConfirm] = useState(false)
 
   const openCloseConfirm = () => setShowConfirm((prevState) => !prevState)
-
-  /* const onDelete = async () => {
-    try {
-      await delBusiness.delete(businessId)
-      openCloseConfirm()
-      onReload()
-      toast.warning(' ¡ Imagen eliminada exitosamente ! ')
-    } catch (error) {
-      console.error(error)
-    }
-  } */
 
   return (
     
